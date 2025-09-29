@@ -76,5 +76,5 @@ changePassBtn.addEventListener("click",()=>{
 logoutBtn.addEventListener("click",()=>{
     localStorage.removeItem("currUser");
     alert("You have been logged out!");
-    window.local.href="login.html";
+    window.location.href="login.html";
 })
