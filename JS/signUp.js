@@ -57,4 +57,6 @@ localStorage.setItem("currUser", JSON.stringify(user));
     alert("Signup successfully");
     form.reset();
 
+    window.location.href="login.html";
+
 })
