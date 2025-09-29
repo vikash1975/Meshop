@@ -1,5 +1,9 @@
 
-
+let currUser = JSON.parse(localStorage.getItem("currUser"));
+if(!currUser){
+    alert("Please login first!");
+    window.location.href = "login.html";
+}else{
 let cartContainer = document.getElementById("cart-container");
 
 // localStorage se cart items read karo
@@ -40,4 +44,5 @@ function displayCart() {
 }
 
 // Initial render
-displayCart();
+displayCart()
+}
