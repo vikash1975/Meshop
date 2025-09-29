@@ -51,20 +51,13 @@ function displayProducts(products){
 
 
 function addToCart(id){
-    // localStorage se existing cart items lo
-    let cart = JSON.parse(localStorage.getItem("myCart")) || [];
 
-    // product find karo
+    let cartKey = `cart_${currUser.email}`; // unique key per user
+    let cart = JSON.parse(localStorage.getItem(cartKey)) || [];
     let product = allProducts.find(p => p.id === id);
 
-    // duplicate check (optional)
-    if(!cart.find(p => p.id === id)){
-        cart.push(product);
-    }
-
-    // localStorage me save karo
-    localStorage.setItem("myCart", JSON.stringify(cart));
-
+    cart.push(product);
+    localStorage.setItem(cartKey, JSON.stringify(cart));
     alert("Item added to cart!");
 }
 
