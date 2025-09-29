@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.heading{
+    font-size: 4rem;
+    text-align: center;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.profile input{
+    padding: 10px;
+    height: 70px;
+    border: 2px solid black;
+    font-size: x-large;
+    font-weight: 300;
+    color: black;
+}
+
+.profile input::placeholder{
+    color: black;
+}
+
+#saveInfo{
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: larger;
+}
+#saveInfo{
+    cursor: pointer;
+}
+
+.edit{
+  display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;   
+}
+
+.edit input{
+    padding: 10px;
+    height: 70px;
+    border: 2px solid black;
+    font-size: x-large;
+    font-weight: 300;
+    color: black;
+}
+
+.edit input::placeholder{
+      color: black;
+}
+#change{
+      width: 200px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: larger;
+}
+#change:hover{
+    cursor: pointer;
+
+}
+
+#logout{
+    margin-top: 10px;
+    text-align: center;
+     width: 200px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: larger;
+}
+#logout:hover{
+    cursor: pointer;
+}
